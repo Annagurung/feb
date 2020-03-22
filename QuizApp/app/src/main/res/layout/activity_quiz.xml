@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizActivity">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/questionStyle"
+        android:text="1. Jimmy Page was guitarist for one of the most popular rock groups of all time. What rock group was it?"/>
+
+    <RadioGroup
+        android:id="@+id/rd_quiz_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp">
+
+        <RadioButton
+            android:id="@+id/rd_led"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Led Zepplin" />
+        <RadioButton
+            android:id="@+id/rd_rolling"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Rolling Stones" />
+        <RadioButton
+            android:id="@+id/rd_who"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="The Who" />
+        <RadioButton
+            android:id="@+id/ac_dc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="AC/DC" />
+    </RadioGroup>
+
+    <TextView
+
+        style="@style/questionStyle"
+        android:text="2. This band, which featured Ozzy Osbourne on vocals, is often credited as the founding band of heavy metal."
+        />
+
+    <RadioGroup
+        android:id="@+id/rd_quiz_two"
+        style="@style/radioStyle">
+        <RadioButton
+            android:id="@+id/rd_judas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Judas Priest" />
+        <RadioButton
+            android:id="@+id/rd_ac_dc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="AC/DC" />
+        <RadioButton
+            android:id="@+id/rd_black_sabbath"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Black Sabbath" />
+        <RadioButton
+            android:id="@+id/rd_gnr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Guns And Roses" />
+
+    </RadioGroup>
+
+    <!-- Question 3 -->
+
+    <TextView
+
+        style="@style/questionStyle"
+        android:text="3. Which UK rapper had a number one single in 2019 with Vossi Bop?"
+        />
+
+    <EditText
+        android:id="@+id/ed_storm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="8dp"
+        android:hint="Please enter your answer"
+        android:inputType="text"/>
+
+
+    <!-- Question 4 -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4. Which Jamaican rapper released 'Boombastic' in 1995?"
+        android:textAppearance="?android:textAppearanceMedium"/>
+
+    <CheckBox
+        android:id="@+id/chk_snopp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Snoop Dogg"
+        android:textSize="16sp"/>
+
+    <CheckBox
+        android:id="@+id/chk_shaggy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shaggy"
+        android:textSize="16sp"/>
+
+    <CheckBox
+        android:id="@+id/chk_oasis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Oasis"
+        android:textSize="16sp"/>
+
+    <CheckBox
+        android:id="@+id/chk_queen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Queen"
+        android:textSize="16sp"
+        android:layout_marginBottom="16sp"/>
+
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="10dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:text="Check Your Score"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/color_white"/>
+
+</LinearLayout>
+
+</ScrollView>
