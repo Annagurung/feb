@@ -116,7 +116,8 @@
             android:layout_marginLeft="24dp"
             android:layout_marginRight="24dp"
             android:text="+3 Points"
-            android:textColor="@color/color_white"/>
+            android:textColor="@color/color_white"
+            android:onClick="add3ForTeamB"/>
 
         <Button
             android:id="@+id/team_b_2"
@@ -125,7 +126,8 @@
             android:text="+2 Points"
             android:layout_marginRight="24dp"
             android:layout_marginLeft="24dp"
-            android:textColor="@color/color_white"/>
+            android:textColor="@color/color_white"
+            android:onClick="add2ForTeamB"/>
 
         <Button
             android:id="@+id/team_b_1"
@@ -134,7 +136,8 @@
             android:text="+1 Points"
             android:layout_marginRight="24dp"
             android:layout_marginLeft="24dp"
-            android:textColor="@color/color_white"/>
+            android:textColor="@color/color_white"
+            android:onClick="add1ForTeamB"/>
 
     </LinearLayout>
 
